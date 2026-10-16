@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dv1612.github.io/sitemap.xml
