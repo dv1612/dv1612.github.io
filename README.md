@@ -19,7 +19,8 @@ No framework, no build step, no tracking.
 index.html      content and structure
 styles.css      design tokens, components, responsive and print rules
 script.js       theme, nav, reveal, counters, lightbox, clipboard
-assets/img/     dashboard previews (WebP) and the Open Graph card
+assets/img/     dashboard previews (WebP), portrait and Open Graph card
+assets/         Dhruvi-Vegda-Resume.pdf (built from the LaTeX source)
 ```
 
 ### Local preview

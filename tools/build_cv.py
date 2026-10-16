@@ -1,8 +1,10 @@
 """
 build_cv.py
 -----------
-Renders assets/Dhruvi-Vegda-CV.pdf from the same content as the LaTeX resume,
-so the site's "Download CV" button always has a file to serve.
+Fallback CV generator, kept for the case where the LaTeX source cannot be
+compiled. The published resume is assets/Dhruvi-Vegda-Resume.pdf, built from
+resume.txt with LaTeX - that file is canonical. This script writes to
+tools/fallback-cv.pdf and never overwrites it.
 
 Usage:  python tools/build_cv.py
 """
@@ -204,6 +206,6 @@ def build(out: Path) -> int:
 
 
 if __name__ == "__main__":
-    target = Path(__file__).resolve().parent.parent / "assets" / "Dhruvi-Vegda-CV.pdf"
+    target = Path(__file__).resolve().parent / "fallback-cv.pdf"
     target.parent.mkdir(parents=True, exist_ok=True)
     sys.exit(build(target))
